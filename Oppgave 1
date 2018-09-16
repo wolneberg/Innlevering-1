@@ -16,7 +16,7 @@ ph=float(-(math.log10(ioner))) #definerer pH som -log(H+ ioner)
 if ph==7:
     print("pH i løsningen er",ph,"som betyr at løsningen er nøytral.")
 elif 0<=ph<7:
-    print("pH i løsningen er",round(ph,1),"som betyr at løsningen er sur.") #bruker avrunding på pH aå jeg bare får en desimal
+    print("pH i løsningen er",round(ph,1),"som betyr at løsningen er sur.") #bruker avrunding på pH så jeg bare får en desimal
 elif 7<ph<=14:
     print("pH i løsningen er",round(ph,1),"som betyr at løsningen er basisk.")
 else:
