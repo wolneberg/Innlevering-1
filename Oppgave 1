@@ -1,0 +1,31 @@
+#!/usr/bin/env python3
+# -*- coding: utf-8 -*-
+"""
+Created on Sun Sep 16 12:06:30 2018
+
+@author: ingridmariewolneberg
+"""
+
+#Beregning av pH og avgjøre om løsningen er sur, basisk eller nøytral
+
+import math
+
+ioner=float(input("Hvor mange H+ ioner er det per liter i løsningen? ")) #definer ioner som en input, hvor man skriver inn hvor mange H+ ioner det er
+ph=float(-(math.log10(ioner))) #definerer pH som -log(H+ ioner) 
+
+if ph==7:
+    print("pH i løsningen er",ph,"som betyr at løsningen er nøytral.")
+elif 0<=ph<7:
+    print("pH i løsningen er",round(ph,1),"som betyr at løsningen er sur.") #bruker avrunding på pH aå jeg bare får en desimal
+elif 7<ph<=14:
+    print("pH i løsningen er",round(ph,1),"som betyr at løsningen er basisk.")
+else:
+    print("Verdien du skrev er ikke mulig.")
+    
+    
+    
+    
+
+
+
+    
