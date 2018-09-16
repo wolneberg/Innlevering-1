@@ -1,0 +1,36 @@
+#!/usr/bin/env python3
+# -*- coding: utf-8 -*-
+"""
+Created on Sun Sep 16 13:01:11 2018
+
+@author: ingridmariewolneberg
+"""
+import math #importerer så jeg kan ta kvadratroten av farten
+
+def formel(): #definerer funskjonen slik at du ikke trenger kjøre programmet på nytt hvis du skrev feil på første spørsmål
+    spør=input("Vil du regne ut energi, masse eller fart? ")
+    if spør=="energi":
+        masse=float(input("Hva er massen til legemet? "))
+        fart=float(input("Hva er farten til legemet? "))
+        E=(1/2)*masse*(fart**2)
+        print('\n',"Legemet har energien:",E,"J")
+    elif spør=="masse":
+        energi=float(input("Hva er energien til legemet? "))
+        fart=float(input("Hva er farten til legemet? "))
+        m=(2*energi)/(fart**2)
+        print('\n',"Legemet har en masse på:",m,"kg")
+    elif spør=="fart":
+        masse=float(input("Hva er massen til legemet? "))
+        energi=float(input("Hva er energien til legemet? "))
+        v=math.sqrt((2*energi)/masse)
+        print('\n',"Legemet har en fart på:",v,"m/s")
+    else:
+        print("Programmet skjønte ikke hva du mente, du må skrive enten energi, masse eller fart!",'\n')
+        formel()
+        
+formel()
+
+    
+
+
+    
