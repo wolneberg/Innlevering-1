@@ -1,0 +1,27 @@
+#!/usr/bin/env python3
+# -*- coding: utf-8 -*-
+"""
+Created on Sun Sep 16 16:28:23 2018
+
+@author: ingridmariewolneberg
+"""
+
+bnå=int(input("Hva er den nåværende populasjonen? "))
+p=input("Synker eller stiger populasjonen? ") #må spørre for å vite hvilken formel som skal brukes
+t=int(input("Hvor mange år fra i dag vil du vite populasjonen? "))
+
+if p=="synker":   #bruker if test om for å fortelle hva den skal gjøre om den synker eller stiger
+    mye=int(input("Hvor mange prosent synker populasjonen? "))
+    for x in range(0,1):
+        bny=bnå*(1-(mye/100))**t
+        print(int(bny))
+elif p=="stiger":
+    mye2=int(input("Hvor mange prosent stiger populasjonen? "))
+    for x in range(0,1):
+        bny=bnå*(1+(mye2/100))**t
+        print(int(bny))
+else:
+    print("Programmet skjønte ikke hva du mente...")
+    
+
+    
